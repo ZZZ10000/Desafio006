@@ -13,7 +13,7 @@ gem "figaro"
 
 gem "rspec-rails", group: [ :development, :test ]
 
-gem "bootstrap", "~> 5.0.0"
+gem "bootstrap", "~> 5.3.3"
 
 
 
