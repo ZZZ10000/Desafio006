@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: admin1234
+  host: localhost
+  port: 5432
+
+development:
+  <<: *default
+  database: desafio062_development
+
+test:
+  <<: *default
+  database: desafio062_test
+
+production:
+  <<: *default
+  database: desafio062_production
+  username: desafio062
+  password: <%= ENV['DESAFIO062_DATABASE_PASSWORD'] %>
+
